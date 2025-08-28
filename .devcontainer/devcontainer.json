@@ -1,0 +1,9 @@
+{
+  "name": "pg_duckdb-lab",
+  "forwardPorts": [3000, 5432],
+  "portsAttributes": {
+    "3000": { "label": "Metabase", "onAutoForward": "openBrowser" },
+    "5432": { "label": "Postgres" }
+  },
+  "postCreateCommand": "docker compose up -d"
+}
