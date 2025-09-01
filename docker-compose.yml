@@ -2,6 +2,7 @@ services:
   postgres:
     image: pgduckdb/pgduckdb:17-main
     container_name: lab-postgres
+    user: "0:0"
     env_file: .env
     environment:
       PGDATA: /var/lib/postgresql/data
