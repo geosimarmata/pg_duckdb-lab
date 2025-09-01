@@ -5,5 +5,5 @@
     "3000": { "label": "Metabase", "onAutoForward": "openBrowser" },
     "5432": { "label": "Postgres" }
   },
-  "postCreateCommand": "docker compose up -d"
+  "postCreateCommand": "mkdir -p data/pgdata && sudo chown -R 999:999 data/pgdata && sudo chmod 700 data/pgdata && docker compose up -d"
 }
